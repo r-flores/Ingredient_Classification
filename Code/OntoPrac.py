@@ -7,7 +7,7 @@ from nltk.corpus import stopwords
 
 #owlready2.onto_path.append('Code\\')
 
-food_onto = owlready2.get_ontology('Code\\foodon.owl').load()
+food_onto = owlready2.get_ontology('foodon.owl').load()
 print("Ontology Loaded...")
 
 # Food product = FOODON_00001002
@@ -16,7 +16,7 @@ print("Ontology Loaded...")
 test_re = open("test.txt", 'w')
 tested_terms = []
 
-file_path = "Code\\testset.csv"
+file_path = "testset.csv"
 with open(file_path) as data:
         entry = csv.DictReader(data)
         for row in entry:
