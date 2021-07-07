@@ -22,7 +22,9 @@ def file_selection():
     )
     if not path:
         print("No File Selected")
-        return
+        input("Press enter to quit")
+        quit()
+
     if path:
         print(path)
         return path
@@ -67,14 +69,16 @@ def ontology_classifier(filename):
                 if t not in tested_terms:
                     tested_terms.append(t)
                     classified_terms.write(str(t))
+                    term_class = food_onto.search_one(label=t)
                     classified_terms.write("    |    ")
-                    term_class = food_onto.search_one(label="*" + t + "*")
                     try:
 
                         # All FoodOn properties https://www.ebi.ac.uk/ols/ontologies/foodon/properties
                         # R0.0002350 = "member of' Property , is member of is a mereological relation
                         # between a item and a collection.
-                        classified_terms.write(str(term_class.RO_0002350))
+
+                        # classified_terms.write(str(term_class.RO_0002350))
+                        classified_terms.write(str(term_class.label))
                     except AttributeError as e:
                         classified_terms.write("No Class\n")
                         continue
