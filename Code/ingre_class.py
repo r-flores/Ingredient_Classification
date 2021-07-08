@@ -42,6 +42,7 @@ def ontology_classifier(filename):
 
     # create a new files for writing results
     classified_terms = open("classified_Terms.csv", 'w')
+    classified_terms.write("term,membership\n")
 
     # collection of already examined words
     tested_terms = []
@@ -69,6 +70,8 @@ def ontology_classifier(filename):
                 if t not in tested_terms:
                     tested_terms.append(t)
                     classified_terms.write(str(t))
+
+                    # Search for the term exactly as is.
                     term_class = food_onto.search_one(label=t)
                     classified_terms.write(",")
                     try:
