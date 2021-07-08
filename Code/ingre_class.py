@@ -41,7 +41,7 @@ def ontology_classifier(filename):
     food_onto = owlready2.get_ontology('foodon.owl').load()
 
     # create a new files for writing results
-    classified_terms = open("classified_Terms.csv", 'w')
+    classified_terms = open("classified_Terms.csv", 'w', newline='')
     write = csv.DictWriter(classified_terms, fieldnames=['Term', 'Membership'])
     write.writeheader()
 
@@ -70,27 +70,21 @@ def ontology_classifier(filename):
             for t in word_list:
                 if t not in tested_terms:
                     tested_terms.append(t)
-                    #classified_terms.write(str(t))
 
                     # Search for the term exactly as is.
                     term_class = food_onto.search_one(label=t)
-                    #classified_terms.write(",")
+
                     try:
 
                         # All FoodOn properties https://www.ebi.ac.uk/ols/ontologies/foodon/properties
                         # R0.0002350 = "member of' Property , is member of is a mereological relation
                         # between a item and a collection.
-
-                        #classified_terms.write(str(term_class.RO_0002350))
                         write.writerow({'Term': str(t), 'Membership': str(food_onto.search_one(is_a=term_class.RO_0002350).label)})
-                        #classified_terms.write(str(food_onto.search_one(is_a=term_class.RO_0002350).label))
-                        # classified_terms.write(str(term_class.label))
+
                     except AttributeError as e:
-                        #classified_terms.write("No Class\n")
                         write.writerow({'Term': str(t), 'Membership': 'No Class'})
                         continue
 
-                    #classified_terms.write("\n")
                 else:
                     print(str(t) + " is duplicate")
 
