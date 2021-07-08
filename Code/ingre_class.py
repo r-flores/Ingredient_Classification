@@ -65,7 +65,7 @@ def ontology_classifier(filename):
 
             # remove stop words
             stop_words = set(stopwords.words('english'))
-            word_list = [ingredient for ingredient in all_words if not ingredient in stop_words]
+            word_list = [ingredient for ingredient in all_words if ingredient not in stop_words]
 
             for t in word_list:
                 if t not in tested_terms:
@@ -79,9 +79,10 @@ def ontology_classifier(filename):
                         # All FoodOn properties https://www.ebi.ac.uk/ols/ontologies/foodon/properties
                         # R0.0002350 = "member of' Property , is member of is a mereological relation
                         # between a item and a collection.
-                        write.writerow({'Term': str(t), 'Membership': str(food_onto.search_one(is_a=term_class.RO_0002350).label)})
+                        write.writerow({'Term': str(t),
+                                        'Membership': str(food_onto.search_one(is_a=term_class.RO_0002350).label)})
 
-                    except AttributeError as e:
+                    except AttributeError:
                         write.writerow({'Term': str(t), 'Membership': 'No Class'})
                         continue
 
