@@ -1,61 +1,58 @@
 import csv
+import re
 import owlready2
 import tkinter
 from tkinter.filedialog import askopenfilename
-from nltk.tokenize import word_tokenize
+from nltk.tokenize import word_tokenize, RegexpTokenizer
 from nltk.corpus import stopwords
 
-#owlready2.onto_path.append('Code\\')
-
-food_onto = owlready2.get_ontology('foodon.owl').load()
-print("Ontology Loaded...")
-
-# Food product = FOODON_00001002
-# General Label Claim = FOODON_03510059
-
-test_re = open("test.txt", 'w')
 tested_terms = []
+with open('testset.csv') as data:
+    entry = csv.DictReader(data)
+    for row in entry:
 
-file_path = "testset.csv"
-with open(file_path) as data:
-        entry = csv.DictReader(data)
-        for row in entry:
+        # make text lowercase
+        ingredients = row['ingredients'].lower()
 
-            # make text lowercase
-            ingredients = row['ingredients'].lower()
+        # strip end line characters
+        ingredients = ingredients.rstrip()
 
-            # strip end line characters
-            ingredients = ingredients.rstrip()
+        # split on common delimiters for ingredients NOT spaces
+        # this will keep multi word ingredients together (for example Vegetable Oil)
+        ingredients = re.split(',|:|-', ingredients)
+        ingredients = [word.split() for word in ingredients]
 
-            # tokenize text
-            tok_ingre = word_tokenize(ingredients)
+        # join ingredients on space
+        ingredients = [' '.join(word) for word in ingredients]
 
-            # remove punctuation
-            all_words = [word for word in tok_ingre if word.isalpha()]
+        # Tokenize list of ingredients
+        tok_ingre = [word_tokenize(ingredient) for ingredient in ingredients]
 
-            # remove stop words
+        # check to make sure words are alpha and do not include stop words
+        all_words = []
+        for entry in tok_ingre:
             stop_words = set(stopwords.words('english'))
-            ingre_words = [ingredient for ingredient in all_words if not ingredient in stop_words]
-            for t in ingre_words:
-                if t not in tested_terms:
-                    tested_terms.append(t)
-                    test_re.write(str(t))
-                    test_re.write("    |    ")
-                    term_class = food_onto.search_one(label = "*"+t+"*")
-                    try:
-                        test_re.write(str(term_class.RO_0002350))
-                    except AttributeError as e:
-                        test_re.write("No Class")
-                        continue
+            all_words.append(' '.join([word for word in entry if word.isalpha() and word not in stop_words]))
 
-                    test_re.write("\n")
-                else:
-                    print(str(t) + " is duplicate")
-        
+        print(all_words)
 
-print("closign")
-test_re.close()               
-#ans = food_onto.search_one(label = str("salt"))
-#print(ans)
-#print(ans.label)
-#print(ans.RO_0002350)
+        # tokenize text
+        # tok_ingre = word_tokenize(ingredients, language='english')
+        # print(tok_ingre)
+
+        '''
+        # remove punctuation
+        all_words = [word for word in tok_ingre if word.isalpha()]
+
+        # remove stop words
+        stop_words = set(stopwords.words('english'))
+        word_list = [ingredient for ingredient in all_words if ingredient not in stop_words]
+
+        for t in word_list:
+            if t not in tested_terms:
+                tested_terms.append(t)
+
+    print(tested_terms)
+'''
+
+data.close()

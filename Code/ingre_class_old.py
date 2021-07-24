@@ -6,7 +6,6 @@
 ############################
 import csv
 import owlready2
-import re
 import tkinter
 from tkinter.filedialog import askopenfilename
 from nltk.tokenize import word_tokenize
@@ -58,24 +57,17 @@ def ontology_classifier(filename):
             # strip end line characters
             ingredients = ingredients.rstrip()
 
-            # split on common delimiters for ingredients NOT spaces
-            # this will keep multi word ingredients together (for example Vegetable Oil)
-            ingredients = re.split(',|:|-', ingredients)
-            ingredients = [word.split() for word in ingredients]
+            # tokenize text
+            tok_ingre = word_tokenize(ingredients, language='english')
 
-            # join ingredients on space
-            ingredients = [' '.join(word) for word in ingredients]
+            # remove punctuation
+            all_words = [word for word in tok_ingre if word.isalpha()]
 
-            # Tokenize list of ingredients
-            tok_ingre = [word_tokenize(ingredient) for ingredient in ingredients]
+            # remove stop words
+            stop_words = set(stopwords.words('english'))
+            word_list = [ingredient for ingredient in all_words if ingredient not in stop_words]
 
-            # check to make sure words are alpha and do not include stop words
-            all_words = []
-            for entry in tok_ingre:
-                stop_words = set(stopwords.words('english'))
-                all_words.append(' '.join([word for word in entry if word.isalpha() and word not in stop_words]))
-
-            for t in all_words:
+            for t in word_list:
                 if t not in tested_terms:
                     tested_terms.append(t)
 
