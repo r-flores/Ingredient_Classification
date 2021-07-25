@@ -43,7 +43,7 @@ def ontology_classifier(filename):
 
     # create a new files for writing results
     classified_terms = open("classified_Terms.csv", 'w', newline='')
-    write = csv.DictWriter(classified_terms, fieldnames=['Term', 'Membership'])
+    write = csv.DictWriter(classified_terms, fieldnames=['Term (from label)', 'Term (from ontology)', 'Membership'])
     write.writeheader()
 
     # collection of already examined words
@@ -51,6 +51,7 @@ def ontology_classifier(filename):
 
     with open(filename) as data:
         entry = csv.DictReader(data)
+        stop_words = set(stopwords.words('english'))
         for row in entry:
             # make text lowercase
             ingredients = row['ingredients'].lower()
@@ -72,7 +73,6 @@ def ontology_classifier(filename):
             # check to make sure words are alpha and do not include stop words
             all_words = []
             for entry in tok_ingre:
-                stop_words = set(stopwords.words('english'))
                 all_words.append(' '.join([word for word in entry if word.isalpha() and word not in stop_words]))
 
             for t in all_words:
@@ -88,18 +88,22 @@ def ontology_classifier(filename):
                     if term_class is None:
                         term_class = food_onto.search_one(label='*'+t+'*')
 
+                    # All FoodOn properties https://www.ebi.ac.uk/ols/ontologies/foodon/properties
+                    # R0_0002350 = "member of' Property , is member of is a mereological relation
+                    # between a item and a collection.
                     try:
+                        term_onto = str(term_class.label)
+                    except AttributeError:
+                        term_onto = 'No results'
 
-                        # All FoodOn properties https://www.ebi.ac.uk/ols/ontologies/foodon/properties
-                        # R0_0002350 = "member of' Property , is member of is a mereological relation
-                        # between a item and a collection.
-                        write.writerow({'Term': str(t),
-                                        'Membership': str(food_onto.search_one(is_a=term_class.RO_0002350).label)})
+                    try:
+                        membership = str(food_onto.search_one(is_a=term_class.RO_0002350).label)
+                    except AttributeError:
+                        membership = 'No Class'
 
-                    except AttributeError as e:
-                        #print(e)
-                        write.writerow({'Term': str(t), 'Membership': 'No Class'})
-                        continue
+                    write.writerow({'Term (from label)': str(t),
+                                    'Term (from ontology)': str(term_onto),
+                                    'Membership': str(membership)})
 
     classified_terms.close()
     data.close()

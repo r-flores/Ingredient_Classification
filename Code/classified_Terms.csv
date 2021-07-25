@@ -1,207 +1,207 @@
-Term,Membership
-vegetable oil,No Class
-ingredients,No Class
-beef stock,No Class
-contains less,No Class
-mirepoix carrots,No Class
-celery,No Class
-onions,['vegetable or vegetable product (us cfr)']
-salt,No Class
-natural flavoring,No Class
-yeast extract,['refined or partially-refined food product (us cfr)']
-cane sugar,No Class
-clam stock,No Class
-potatoes,No Class
-clams,No Class
-cream,No Class
-vegetable oil corn,No Class
-canola,No Class
-soybean,No Class
-modified food starch,No Class
-wheat flour,['milled grain or starch product (us cfr)']
-soy protein concentrate,No Class
-uncured smoked bacon pieces,No Class
-nitrates nitrites added,No Class
-except naturally occurring sea salt pork,No Class
-water,No Class
-sea salt,No Class
-sugar,No Class
-dried onions,No Class
-spices,['distinctive distilled spirits (us cfr)']
-sodium phosphate,No Class
-flavoring,No Class
-clam extract,No Class
-succinic acid,No Class
-soy lecithin,['butter product analog (us cfr)']
-soy sauce soybeans,No Class
-wheat,No Class
-cod,No Class
-milk,No Class
-soy,No Class
-broccoli,No Class
-cheddar cheese cheddar cheese cultured milk,No Class
-enzymes,No Class
-whey,No Class
-butter,No Class
-parmesan cheddar cheese milk,No Class
-cultures,No Class
-roasted garlic,No Class
-annatto extract color,No Class
-soy lecithin driedcontains,No Class
-chicken stock,['flavoring or seasoning (us cfr)']
-dehydrated chicken,['soup (us cfr)']
-carrot juice concentrate,No Class
-celeriac juice concentrate,No Class
-chicken fat,No Class
-onion extract,No Class
-pea beans,No Class
-carrots,No Class
-cooked ham,No Class
-water added pork,No Class
-sodium phosphates,No Class
-sodium ascorbate,No Class
-sodium nitrite,No Class
-tomato paste,No Class
-monosodium glutamate,No Class
-beta carotene color,No Class
-dried pork stock,No Class
-smoke flavoring,No Class
-garlic,No Class
-diced tomatoes tomato juice,No Class
-tomato puree water,No Class
-olive oil,No Class
-basil,No Class
-citric acid,No Class
-black pepper,No Class
-oregano,No Class
-high fructose corn syrup,No Class
-potassium chloride,No Class
-ascorbic acid vitamin c,No Class
-monopotassium phosphate,No Class
-celery extract,No Class
-garlic oil contains,No Class
-chicken pork frankfurters made chicken,No Class
-pork beef mechanically separated chicken,No Class
-pork,No Class
-corn syrup,['nutritive sweetener (us cfr)']
-beef,No Class
-dextrose,['nutritive sweetener (us cfr)']
-ascorbic acid,No Class
-natural flavors,No Class
-enriched pasta wheat flour,No Class
-niacin,No Class
-ferrous sulfate,No Class
-thiamine mononitrate,No Class
-riboflavin,No Class
-folic acid,No Class
-prepared mustard distilled vinegar,No Class
-mustard seed,No Class
-turmeric,No Class
-paprika,No Class
-spice,No Class
-enzyme modified cheddar cheese cheddar cheese cultured milk,No Class
-calcium chloride,No Class
-disodium phosphate,No Class
-enzyme modified butter,No Class
-reconstituted skim milk,No Class
-garlic dried contains,No Class
-prepared navy beans,No Class
-brown sugar,No Class
-onion,No Class
-tomato puree tomato paste,No Class
-modified corn starch,No Class
-vinegar,No Class
-garlic powder,No Class
-natural flavor,No Class
-caramel color,No Class
-prepared organic chick peas,No Class
-brown sugar contains less,No Class
-red bell pepper,No Class
-mustard water,No Class
-autolyzed yeast extract,No Class
-natural smoke flavor,No Class
-tomato powder,No Class
-vinegar powder,No Class
-pork fat,No Class
-bacon,No Class
-bacon fat,No Class
-tamarind,No Class
-made,No Class
-enriched wheat flour flour,No Class
-reduced iron,No Class
-canola extra virgin olive oils,No Class
-wheat gluten,No Class
-malt syrup,No Class
-yeast,No Class
-malted barley flour,No Class
-rice flour,No Class
-sesame seed,No Class
-sesame seed meal,No Class
-margarine palm oil,No Class
-soybean oil,No Class
-vitamin palmitate added,No Class
-mozzarella cheese part,No Class
-skim milk,No Class
-corn meal,['milled grain or starch product (us cfr)']
-parsley flakes,No Class
-garlic extract,No Class
-turmeric annatto extracts color contains,No Class
-chicken broth,"['soup, thin (us cfr)']"
-chicken fat dried,No Class
-brown sugar sugar,No Class
-invert sugar,No Class
-molasses,No Class
-palm oil,No Class
-eggs,No Class
-cornstarch,No Class
-ginger,No Class
-baking soda,No Class
-cinnamon,No Class
-soy lecithin contains,No Class
-made smiles whole wheat flour,No Class
-vegetable oils canola,No Class
-sunflower soybean,No Class
-cocoa processed alkali,No Class
-invert syrup,No Class
-chocolate,['cacao or chocolate product (us cfr)']
-palm kernel oil,No Class
-cocoa powder,No Class
-nonfat milk,No Class
-corn syrup solids,No Class
-baking powder sodium acid pyrophosphate,No Class
-monocalcium phosphate,No Class
-thyme,No Class
-peaches,No Class
-vegetable oils palm,No Class
-hydrogenated cottonseed,No Class
-modified cornstarch,No Class
-dehydrated apples,No Class
-mono diglycerides,No Class
-turmeric annatto extracts,No Class
-whole wheat flour,['milled grain or starch product (us cfr)']
-honey,No Class
-cracked wheat,No Class
-oats,No Class
-flaxseed,No Class
-wheat bran,['milled grain or starch product (us cfr)']
-wheat germ,['milled grain or starch product (us cfr)']
-olives,['pasteurized process cheese (us cfr)']
-sesame seed meal contains,No Class
-low,No Class
-moisture part,['uncured cheese (us cfr)']
-skim mozzarella cheese part,No Class
-monterey jack cheese milk,No Class
-parsley,No Class
-natural flavors garlic,No Class
-made smiles enriched wheat flour flour,No Class
-cheddar cheese cultured milk,No Class
-annatto,['color additive (us cfr)']
-onion powder,No Class
-baking soda contains,No Class
-vegetable oils palm soybean hydrogenated soybean,No Class
-sweetener blend invert syrup,No Class
-egg whites,No Class
-fructose,No Class
-ammonium bicarbonate,No Class
-cream tartar,No Class
-canola sunflower oil,No Class
+Term (from label),Term (from ontology),Membership
+vegetable oil,['vegetable oil'],No Class
+ingredients,['cold-pack cheese with added ingredients'],No Class
+beef stock,['beef stock base (meatless)'],No Class
+contains less,No results,No Class
+mirepoix carrots,No results,No Class
+celery,['wild celery plant'],No Class
+onions,['peas and onions (raw)'],['vegetable or vegetable product (us cfr)']
+salt,"['salt', 'salt', 'salt']",No Class
+natural flavoring,No results,No Class
+yeast extract,['yeast extract'],['refined or partially-refined food product (us cfr)']
+cane sugar,['cane sugar'],No Class
+clam stock,No results,No Class
+potatoes,['obsolete: potatoes (scalloped)'],No Class
+clams,"['25470 - clams, cockles, arkshells (efsa foodex2)']",No Class
+cream,['soy cream'],No Class
+vegetable oil corn,No results,No Class
+canola,['canola meal'],No Class
+soybean,['soybean stubble'],No Class
+modified food starch,['no modified food starch added claim or use'],No Class
+wheat flour,['wheat flour'],['milled grain or starch product (us cfr)']
+soy protein concentrate,No results,No Class
+uncured smoked bacon pieces,No results,No Class
+nitrates nitrites added,No results,No Class
+except naturally occurring sea salt pork,No results,No Class
+water,"['water', 'water']",No Class
+sea salt,['40590 - sea salt (efsa foodex2)'],No Class
+sugar,['sugar'],No Class
+dried onions,No results,No Class
+spices,['brandy flavored with herbs and/or spices'],['distinctive distilled spirits (us cfr)']
+sodium phosphate,['sodium phosphate'],No Class
+flavoring,['hops product flavoring'],No Class
+clam extract,No results,No Class
+succinic acid,"['succinic acid', 'succinic acid', 'succinic acid']",No Class
+soy lecithin,['soy lecithin spread'],['butter product analog (us cfr)']
+soy sauce soybeans,No results,No Class
+wheat,['food made from wheat'],No Class
+cod,['cod'],No Class
+milk,['milk'],No Class
+soy,['soybean stubble'],No Class
+broccoli,['broccoli sprout'],No Class
+cheddar cheese cheddar cheese cultured milk,No results,No Class
+enzymes,['44520 - enzymes for food manufacture (efsa foodex2)'],No Class
+whey,['peanut whey'],No Class
+butter,['butter'],No Class
+parmesan cheddar cheese milk,No results,No Class
+cultures,['44540 - starter cultures (efsa foodex2)'],No Class
+roasted garlic,No results,No Class
+annatto extract color,No results,No Class
+soy lecithin driedcontains,No results,No Class
+chicken stock,['chicken stock base (meatless)'],['flavoring or seasoning (us cfr)']
+dehydrated chicken,"['soup mix, with dehydrated chicken']",['soup (us cfr)']
+carrot juice concentrate,No results,No Class
+celeriac juice concentrate,No results,No Class
+chicken fat,['chicken fat'],No Class
+onion extract,No results,No Class
+pea beans,No results,No Class
+carrots,['peas and carrots (canned)'],No Class
+cooked ham,No results,No Class
+water added pork,No results,No Class
+sodium phosphates,No results,No Class
+sodium ascorbate,['sodium ascorbate'],No Class
+sodium nitrite,['sodium nitrite'],No Class
+tomato paste,['tomato paste'],No Class
+monosodium glutamate,['monosodium glutamate'],No Class
+beta carotene color,No results,No Class
+dried pork stock,No results,No Class
+smoke flavoring,No results,No Class
+garlic,['softneck garlic'],No Class
+diced tomatoes tomato juice,No results,No Class
+tomato puree water,No results,No Class
+olive oil,['olive oil'],No Class
+basil,['bush basil'],No Class
+citric acid,"['citric acid', 'citric acid', 'citric acid']",No Class
+black pepper,['black pepper plant'],No Class
+oregano,"['oregano, mexican (plant)']",No Class
+high fructose corn syrup,No results,No Class
+potassium chloride,['potassium chloride'],No Class
+ascorbic acid vitamin c,No results,No Class
+monopotassium phosphate,No results,No Class
+celery extract,No results,No Class
+garlic oil contains,No results,No Class
+chicken pork frankfurters made chicken,No results,No Class
+pork beef mechanically separated chicken,No results,No Class
+pork,['sweet and sour pork'],No Class
+corn syrup,['corn syrup'],['nutritive sweetener (us cfr)']
+beef,['cut of beef'],No Class
+dextrose,['dextrose'],['nutritive sweetener (us cfr)']
+ascorbic acid,"['ascorbic acid', 'ascorbic acid', 'ascorbic acid']",No Class
+natural flavors,['popcorn (microwave with real butter and natural flavors)'],No Class
+enriched pasta wheat flour,No results,No Class
+niacin,"['nicotinic acid', 'niacin (b3)', 'nicotinic acid']",No Class
+ferrous sulfate,No results,No Class
+thiamine mononitrate,No results,No Class
+riboflavin,"['riboflavin', 'riboflavin', 'riboflavin (b2)']",No Class
+folic acid,"['folic acid', 'b9 folate', 'folic acid']",No Class
+prepared mustard distilled vinegar,No results,No Class
+mustard seed,"['mustard seed (whole)', 'mustard seed (whole)']",No Class
+turmeric,['turmeric extract'],No Class
+paprika,['paprika'],No Class
+spice,['spice'],No Class
+enzyme modified cheddar cheese cheddar cheese cultured milk,No results,No Class
+calcium chloride,No results,No Class
+disodium phosphate,No results,No Class
+enzyme modified butter,No results,No Class
+reconstituted skim milk,No results,No Class
+garlic dried contains,No results,No Class
+prepared navy beans,No results,No Class
+brown sugar,['brown sugar'],No Class
+onion,['obsolete: pea and onion'],No Class
+tomato puree tomato paste,No results,No Class
+modified corn starch,No results,No Class
+vinegar,['vinegar'],No Class
+garlic powder,['garlic powder'],No Class
+natural flavor,['popcorn (microwave with real butter and natural flavors)'],No Class
+caramel color,No results,No Class
+prepared organic chick peas,No results,No Class
+brown sugar contains less,No results,No Class
+red bell pepper,['sweet red bell pepper (whole)'],No Class
+mustard water,No results,No Class
+autolyzed yeast extract,No results,No Class
+natural smoke flavor,No results,No Class
+tomato powder,['tomato powder'],No Class
+vinegar powder,No results,No Class
+pork fat,['pork fatty tissue (partially defatted)'],No Class
+bacon,['Canadian bacon'],No Class
+bacon fat,['bacon fat (cooked)'],No Class
+tamarind,['tamarind (whole)'],No Class
+made,['American-made product'],No Class
+enriched wheat flour flour,No results,No Class
+reduced iron,No results,No Class
+canola extra virgin olive oils,No results,No Class
+wheat gluten,['wheat gluten'],No Class
+malt syrup,['30070 - barley malt syrup (efsa foodex2)'],No Class
+yeast,"['yeast', 'yeast']",No Class
+malted barley flour,No results,No Class
+rice flour,['brown rice flour'],No Class
+sesame seed,['sesame seed'],No Class
+sesame seed meal,No results,No Class
+margarine palm oil,No results,No Class
+soybean oil,['soybean oil'],No Class
+vitamin palmitate added,No results,No Class
+mozzarella cheese part,No results,No Class
+skim milk,['chocolate-flavored skim milk'],No Class
+corn meal,['corn meal'],['milled grain or starch product (us cfr)']
+parsley flakes,No results,No Class
+garlic extract,No results,No Class
+turmeric annatto extracts color contains,No results,No Class
+chicken broth,['chicken broth'],"['soup, thin (us cfr)']"
+chicken fat dried,No results,No Class
+brown sugar sugar,No results,No Class
+invert sugar,['invert sugar'],No Class
+molasses,['molasses'],No Class
+palm oil,['palm oil'],No Class
+eggs,['eggshell'],No Class
+cornstarch,['cornstarch (artificially flavored and colored)'],No Class
+ginger,['ginger root'],No Class
+baking soda,['baking soda product'],No Class
+cinnamon,['cinnamon'],No Class
+soy lecithin contains,No results,No Class
+made smiles whole wheat flour,No results,No Class
+vegetable oils canola,No results,No Class
+sunflower soybean,No results,No Class
+cocoa processed alkali,No results,No Class
+invert syrup,No results,No Class
+chocolate,['chocolate'],['cacao or chocolate product (us cfr)']
+palm kernel oil,['palm kernel oil'],No Class
+cocoa powder,"['20  coffee, tea, cocoa powder (efg)']",No Class
+nonfat milk,"['skim milk (pasteurized, vitamin A and D fortified, nonfat milk solids added)']",No Class
+corn syrup solids,No results,No Class
+baking powder sodium acid pyrophosphate,No results,No Class
+monocalcium phosphate,No results,No Class
+thyme,['spanish thyme leaf (whole)'],No Class
+peaches,['corn flakes (with instant peaches)'],No Class
+vegetable oils palm,No results,No Class
+hydrogenated cottonseed,No results,No Class
+modified cornstarch,No results,No Class
+dehydrated apples,No results,No Class
+mono diglycerides,No results,No Class
+turmeric annatto extracts,No results,No Class
+whole wheat flour,['whole wheat flour'],['milled grain or starch product (us cfr)']
+honey,['honey'],No Class
+cracked wheat,['cracked wheat bread'],No Class
+oats,['oats'],No Class
+flaxseed,['flaxseed oil'],No Class
+wheat bran,['wheat bran'],['milled grain or starch product (us cfr)']
+wheat germ,['wheat germ'],['milled grain or starch product (us cfr)']
+olives,['pimiento cheese with olives'],['pasteurized process cheese (us cfr)']
+sesame seed meal contains,No results,No Class
+low,['quinoline yellow'],No Class
+moisture part,"['mozzarella cheese (low-moisture, part-skim)', 'mozzarella cheese low-moisture part-skim']",['uncured cheese (us cfr)']
+skim mozzarella cheese part,No results,No Class
+monterey jack cheese milk,No results,No Class
+parsley,['parsley leaf (whole)'],No Class
+natural flavors garlic,No results,No Class
+made smiles enriched wheat flour flour,No results,No Class
+cheddar cheese cultured milk,No results,No Class
+annatto,['oil soluble annatto'],['color additive (us cfr)']
+onion powder,['onion powder'],No Class
+baking soda contains,No results,No Class
+vegetable oils palm soybean hydrogenated soybean,No results,No Class
+sweetener blend invert syrup,No results,No Class
+egg whites,No results,No Class
+fructose,"['fructose', 'fructose', 'fructose', 'fructose']",No Class
+ammonium bicarbonate,No results,No Class
+cream tartar,No results,No Class
+canola sunflower oil,No results,No Class
